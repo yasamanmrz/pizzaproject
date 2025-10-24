@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@layer base {
+    @font-face {
+        font-family: pasifico;
+        src: url(../font/Pacifico-Regular.ttf);
+    }
+    @font-face {
+        font-family: dosis;
+        src: url(../font/Dosis-VariableFont_wght.ttf);
+    }
+    a{
+        @apply decoration-0 text-white
+    }
+}
+@layer components{
+    .btninheader{
+        @apply w-[110px] lg:w-[290px] h-[60px] bg-[#ef0031] border border-[#ef0031] text-white text-[20px] p-[20px] duration-500 hover:bg-[#14141492] cursor-pointer flex justify-center items-center uppercase
+    }
+    .btn{
+        @apply w-[200px] h-[60px] bg-[#ef0031] text-white text-[22px] duration-500 hover:bg-white hover:text-black cursor-pointer flex items-center justify-center
+    }
+    .card{
+        @apply h-[300px] *:w-full p-5 *:flex *:justify-center
+
+    }
+
+}
+@layer utilities{
+    .row{
+        @apply w-full flex flex-wrap
+    }
+}
+a, p, h5{
+    font-family: dosis;
+}
+h1, h3, h2{
+    font-family: pasifico;
+}
+.btn{
+    font-family: dosis;
+}
